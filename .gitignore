@@ -1,0 +1,25 @@
+# Simulation output
+build/
+*.vcd
+*.vvp
+*.fst
+
+# Vivado project and build artefacts
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+.Xil/
+*.jou
+*.log
+*.str
+*.xpr
+*.bit
+*.dcp
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
