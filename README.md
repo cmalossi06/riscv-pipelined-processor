@@ -14,9 +14,9 @@ Final project for *Digital Electronics*, Tongji University, Shanghai, 2025/26.
 
 | Design | Test program | Result |
 |---|---|---|
-| Single-cycle RV32I | `finaltest_base.txt`, 18 test groups | ✅ all passed (score 25 written to address 100) |
-| Pipelined RV32I | same program | ✅ all passed (score 25/25) |
-| Pipelined RV32M | `finaltest_mul.txt`, 8 tests | ✅ all passed (score 8/8) |
+| Single-cycle RV32I | `finaltest_base.txt`, 18 test groups | Passed (score 25 written to address 100) |
+| Pipelined RV32I | same program | Passed (score 25/25) |
+| Pipelined RV32M | `finaltest_mul.txt`, 8 tests | Passed (score 8/8) |
 
 On the same test program the single-cycle core executes 78 instructions in 78 cycles, while the pipelined core reaches the final store at cycle 127. The difference comes from the hazard penalties: every test group ends with a taken branch, and each taken branch or jump costs two flushed cycles. On a branch-heavy test like this one, the benefit of pipelining is the shorter clock period, not a lower cycle count.
 
