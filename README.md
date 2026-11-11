@@ -10,6 +10,8 @@ Each stage is verified with a self-checking testbench and a hand-written assembl
 
 Final project for *Digital Electronics*, Tongji University, Shanghai, 2025/26.
 
+Full design report: [docs/report_riscv_processor.pdf](docs/report_riscv_processor.pdf)
+
 ## Results
 
 | Design | Test program | Result |
@@ -120,7 +122,7 @@ Each run writes a `.vcd` file in `programs/` that can be opened in GTKWave.
 rtl/        riscv_single_cycle.v, riscv_pipeline.v (RV32I + RV32M)
 sim/        self-checking testbenches
 programs/   assembly source and machine-code test programs ($readmemh format)
-docs/       datapath diagram and simulation waveforms
+docs/       design report (PDF), datapath diagram and simulation waveforms
 Makefile    simulation targets
 ```
 
